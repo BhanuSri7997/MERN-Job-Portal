@@ -24,8 +24,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin: "https://mern-job-portal-green.vercel.app",
-    credentials: true
+    origin: "http://localhost:5173",
+    credentials: true,
 };
 
 app.use(cors(corsOptions));
